@@ -1,0 +1,98 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2575.4">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;title&gt;Our Love Language Game 💖&lt;/title&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>body { background-color: #fff0f5; font-family: 'Segoe UI', sans-serif; text-align: center; color: #d63384; padding: 20px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.card { background: white; padding: 30px; border-radius: 30px; box-shadow: 0 15px 35px rgba(255, 105, 180, 0.2); max-width: 400px; margin: auto; border: 2px solid #ffb6c1; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>h1 { color: #ff69b4; font-size: 28px; margin-bottom: 5px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.option-group { text-align: left; margin: 20px 0; display: flex; flex-direction: column; gap: 12px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>label { padding: 12px; border: 2px solid #ffe4e1; border-radius: 15px; cursor: pointer; display: flex; align-items: center; gap: 15px; transition: 0.3s; font-weight: 500; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>label:has(input:checked) { background: #fff0f5; border-color: #ff69b4; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>input[type="checkbox"] { transform: scale(1.4); accent-color: #ff69b4; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>button { background: linear-gradient(45deg, #ff69b4, #ff1493); color: white; border: none; padding: 15px; border-radius: 50px; font-size: 18px; cursor: pointer; width: 100%; font-weight: bold; margin-top: 10px; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>button:disabled { background: #ccc; cursor: not-allowed; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.hidden { display: none; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.reveal-box { border: 2px dashed #ff69b4; padding: 20px; margin-top: 25px; border-radius: 20px; text-align: left; background: #fffafa; }</p>
+<p class="p1"><span class="Apple-converted-space">        </span>.pct { font-weight: bold; color: #ff1493; float: right; }</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div class="card"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;h1&gt;Hi! 🌸&lt;/h1&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;p&gt;Choose 1 or 2 ways you feel loved:&lt;/p&gt;</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div class="option-group"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label&gt;&lt;input type="checkbox" name="L" value="Physical Touch"&gt; Physical Touch&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label&gt;&lt;input type="checkbox" name="L" value="Words of Affirmation"&gt; Words of Affirmation&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label&gt;&lt;input type="checkbox" name="L" value="Quality Time"&gt; Quality Time&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label&gt;&lt;input type="checkbox" name="L" value="Acts of Service"&gt; Acts of Service&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;label&gt;&lt;input type="checkbox" name="L" value="Receiving Gifts"&gt; Receiving Gifts&lt;/label&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;button id="btn"&gt;Lock in Answer&lt;/button&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;div id="res" class="hidden"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;div class="reveal-box"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p style="margin-top:0"&gt;&lt;strong&gt;Your Love:&lt;/strong&gt;&lt;br&gt;&lt;span id="me"&gt;&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;hr style="border:0.5px solid #ffb6c1; margin:15px 0;"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">                </span>&lt;p style="margin-bottom:0"&gt;&lt;strong&gt;BF's Love:&lt;/strong&gt;&lt;br&gt;&lt;span id="him"&gt;Waiting for him...&lt;/span&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/div&gt;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script type="module"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";</p>
+<p class="p1"><span class="Apple-converted-space">      </span>import { getDatabase, ref, set, onValue } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-database.js";</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const firebaseConfig = {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>apiKey: "AIzaSyAXGWuHnlbp1b0Zqo9yw5LHGWddnL8g8rc",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>authDomain: "secretgame-d495f.firebaseapp.com",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>databaseURL: "https://secretgame-d495f-default-rtdb.firebaseio.com",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>projectId: "secretgame-d495f",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>storageBucket: "secretgame-d495f.firebasestorage.app",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>messagingSenderId: "961418364506",</p>
+<p class="p1"><span class="Apple-converted-space">        </span>appId: "1:961418364506:web:569f314462cce2d520ba63"</p>
+<p class="p1"><span class="Apple-converted-space">      </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const app = initializeApp(firebaseConfig);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const db = getDatabase(app);</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const user = prompt("Who are you? (Type 'GF' or 'BF')").toUpperCase();</p>
+<p class="p1"><span class="Apple-converted-space">      </span>const partner = (user === "GF") ? "BF" : "GF";</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>const show = (arr) =&gt; arr.map(l =&gt; `${l} &lt;span class="pct"&gt;${100/arr.length}%&lt;/span&gt;`).join("&lt;br&gt;");</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>document.getElementById('btn').onclick = () =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const sel = Array.from(document.querySelectorAll('input:checked')).map(e =&gt; e.value);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (sel.length &lt; 1 || sel.length &gt; 2) return alert("Select 1 or 2!");</p>
+<p class="p2"><span class="Apple-converted-space">        </span></p>
+<p class="p1"><span class="Apple-converted-space">        </span>set(ref(db, 'play/' + user), sel);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('me').innerHTML = show(sel);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('res').classList.remove('hidden');</p>
+<p class="p1"><span class="Apple-converted-space">        </span>document.getElementById('btn').disabled = true;</p>
+<p class="p1"><span class="Apple-converted-space">      </span>};</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">      </span>onValue(ref(db, 'play/' + partner), (s) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>if (s.val()) document.getElementById('him').innerHTML = show(s.val());</p>
+<p class="p1"><span class="Apple-converted-space">      </span>});</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
